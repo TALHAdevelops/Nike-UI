@@ -5,15 +5,16 @@ import Navbar from '@/app/components/Navbar';
 import Footer from '@/app/components/Footer';
 import {products} from '@/app/components/productdata'; // Importing the product data
 import Image from 'next/image';
-
 export default function ProductDetail({ params }: { params: { id: string } }) {
+    // Unwrap the params object using React.use()
     const { id } = params;
   
-    // Find the product by ID
+    // Find the product by ID (convert the string ID to an integer)
     const product = products.find((product) => product.id === parseInt(id));
   
+    // If no product is found, show 404 page
     if (!product) {
-      notFound(); // Handle the 404 page
+      notFound(); // Handle the 404 case
     }
   return (
     <div>
@@ -24,6 +25,8 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
           <Image
             src={product.image.src} // Dynamically use the product image
             alt={product.name}
+            width={500}
+            height={500}
             className="rounded-lg"
           />
         </div>

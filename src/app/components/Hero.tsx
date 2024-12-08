@@ -14,6 +14,7 @@ import dontmiss from "../../../public/dontmiss.png";
 import ess1 from "../../../public/ess1.png"
 import ess2 from "../../../public/ess2.png"
 import ess3 from "../../../public/ess3.png"
+import Link from "next/link";
 export default function Hero() {
   const products = [
     {
@@ -217,7 +218,7 @@ export default function Hero() {
           pair.
         </div>
         <button className="bg-black text-white w-[145px] h-[40px] rounded-full my-7">
-          Find your Shoe
+          <Link href='/products'>Find your Shoe</Link>
         </button>
       </div>
       {/* Gear Up Section */}
@@ -331,7 +332,7 @@ export default function Hero() {
                 <div className="font-medium text-[52px]  mb-5">FLIGHT ESSENTIALS</div>
             <div className="text-center mb-3">Your built-to-last, all-week wears—but with style only Jordan Brand can deliver.</div>
             <button className="bg-black text-white w-[80px] h-[40px] rounded-full my-7">
-          Shop
+          <Link href="/products">Shop</Link>
         </button></div>
         </div>
       </div>

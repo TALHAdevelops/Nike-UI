@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import Link from 'next/link';
+
 import pic1 from '../../../public/pic1.png'
 import pic2 from '../../../public/pic2.png'
 import pic3 from '../../../public/pic3.png'

@@ -124,9 +124,9 @@ export default function Hero() {
   };
 
   return (
-    <div className="w-full items-center">
+    <div className="w-[100%] items-center">
       {/* Top Section */}
-      <div className="w-[1440px] h-[58px] bg-[#F5F5F5] items-center text-center py-2">
+      <div className="w-full h-[58px] bg-[#F5F5F5] items-center text-center py-2">
         <div className="font-semibold text-[15px] pb-1">Hello Nike App</div>
         <div className="text-[11px]">
           Download the app to access everything Nike.{" "}

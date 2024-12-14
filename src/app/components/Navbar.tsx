@@ -9,8 +9,8 @@ import Image from 'next/image'
 export default function Navbar() {
   return (
     <div>
-    <nav className='h-[96px] w-[1440px]'>
-        <div className='w-[1440px] h-[36px] bg-[#F5F5F5] flex justify-between px-8 items-center'>
+    <nav className='h-[96px] w-full'>
+        <div className='w-full h-[36px] bg-[#F5F5F5] flex justify-between px-8 items-center'>
         <div>
             <Link href="/">
         <Image src={vectorlogo} alt='jordan' height={19.2} width={17.97} className='pt-1'/>
@@ -28,7 +28,7 @@ export default function Navbar() {
         </div>
 
 
-        <div className='w-[1440px] h-[60px] flex justify-between items-center text-center px-6'>
+        <div className='w-full h-[60px] flex justify-between items-center text-center px-6'>
             <div>
             <Image src={nikelogo} alt='nike' height={20.54} width={58.85} className='pt-[28.51px] pl-[9.81px]'/>
             </div>

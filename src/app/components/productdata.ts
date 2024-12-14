@@ -16,7 +16,7 @@ import pic15 from '../../../public/pic15.png';
 
 export const products = [
   {
-    id: 1,
+    d: 1,
     label: 'Just In',
     name: "Nike Air Force 1 Mid '07",
     category: "Men's Shoes",
@@ -25,7 +25,7 @@ export const products = [
     image: pic1,
   },
   {
-    id: 2,
+    d: 2,
     label: 'Just In',
     name: 'Nike Court Vision Low Next Nature',
     category: "Men's Shoes",
@@ -34,7 +34,7 @@ export const products = [
     image: pic2,
   },
   {
-    id: 3,
+    d: 3,
     label: 'Just In',
     name: "Nike Air Force 1 PLT.AF.ORM",
     category: "Women's Shoes",
@@ -43,7 +43,7 @@ export const products = [
     image: pic3,
   },
   {
-    id: 4,
+    d: 4,
     label: 'Just In',
     name: 'Nike Dunk Low Retro',
     category: "Men's Shoes",
@@ -52,7 +52,7 @@ export const products = [
     image: pic4,
   },
   {
-    id: 5,
+    d: 5,
     label: 'Promo Exclusion',
     name: 'Nike Air Max SYSTM',
     category: "Older Kid's Shoes",
@@ -61,7 +61,7 @@ export const products = [
     image: pic5,
   },
   {
-    id: 6,
+    d: 6,
     label: 'Just In',
     name: 'Nike Legend Essential 3 Next Nature',
     category: "Men's Training Shoes",
@@ -70,7 +70,7 @@ export const products = [
     image: pic6,
   },
   {
-    id: 7,
+    d: 7,
     label: 'Just In',
     name: 'Nike Standard Issue',
     category: "Women's Basketball Jersey",
@@ -79,7 +79,7 @@ export const products = [
     image: pic7,
   },
   {
-    id: 8,
+    d: 8,
     label: 'Limited Collection',
     name: 'Nike One Leak Protection: Period',
     category: "Women's Mid-Rise 18cm (approx.) Biker Shorts",
@@ -88,7 +88,7 @@ export const products = [
     image: pic8,
   },
   {
-    id: 9,
+    d: 9,
     label: 'Just In',
     name: 'Nike Swoosh',
     category: "Women's Medium-support Padded Sports Bra Tank",
@@ -97,7 +97,7 @@ export const products = [
     image: pic9,
   },
   {
-    id: 10,
+    d: 10,
     label: 'Just In',
     name: 'Nike Dri-FIT Ready',
     category: "Men's Short-Sleeve Fitness Top",
@@ -106,7 +106,7 @@ export const products = [
     image: pic10,
   },
   {
-    id: 11,
+    d: 11,
     label: 'Just In',
     name: 'Nike Sportswear Trend',
     category: "Older Kids' (Girls') High-waisted Woven Shorts",
@@ -115,7 +115,7 @@ export const products = [
     image: pic11,
   },
   {
-    id: 12,
+    d: 12,
     label: 'Just In',
     name: 'Nike Dri-FIT Run Division Rise 365',
     category: "Men's Running Tank",
@@ -124,7 +124,7 @@ export const products = [
     image: pic12,
   },
   {
-    id: 13,
+    d: 13,
     label: 'Just In',
     name: "Nike Blazer Mid '77 Unlocked By You",
     category: "Custom Women's Shoes",
@@ -133,7 +133,7 @@ export const products = [
     image: pic13,
   },
   {
-    id: 14,
+    d: 14,
     label: 'Just In',
     name: 'Air Jordan 1 Mid SE Craft',
     category: "Men's Shoes",
@@ -142,7 +142,7 @@ export const products = [
     image: pic14,
   },
   {
-    id: 15,
+    d: 15,
     label: 'Promo Exclusion',
     name: 'Air Jordan 1 Mid',
     category: "Women's Shoes",

@@ -92,7 +92,7 @@ export default function Page() {
             {/* Product Grid */}
             <div className="col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {products.map((product) => (
-                <div key={product.id} className="border rounded-lg overflow-hidden">
+                <div key={product.d} className="border rounded-lg overflow-hidden">
                   <Image
                     src={product.image}
                     alt={product.name}
@@ -101,7 +101,7 @@ export default function Page() {
                   <div className="p-4">
                     <p className="text-xs text-orange-500">{product.label}</p>
                     <h3 className="font-semibold text-lg">
-                    <Link href={`/products/${product.id}`}>
+                    <Link href={`/products/${product.d}`}>
                              {product.name}
                                             </Link>
                     </h3>

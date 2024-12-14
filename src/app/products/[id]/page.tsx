@@ -1,29 +1,33 @@
 "use client"
 import React from 'react';
-import { notFound } from 'next/navigation'; // For handling invalid IDs
+import { notFound } from 'next/navigation';
 import Navbar from '@/app/components/Navbar';
 import Footer from '@/app/components/Footer';
-import {products} from '@/app/components/productdata'; // Importing the product data
+import {products} from '@/app/components/productdata';
 import Image from 'next/image';
-export default function ProductDetail({ params }: { params: { id: string } }) {
-    // Unwrap the params object using React.use()
-    const { id } = params;
-  
-    // Find the product by ID (convert the string ID to an integer)
-    const product = products.find((product) => product.id === parseInt(id));
-  
-    // If no product is found, show 404 page
-    if (!product) {
-      notFound(); // Handle the 404 case
-    }
+
+type Props = {
+  params: {
+    id: string
+  }
+}
+
+export default function ProductDetail({ params }: Props) {
+  const { id } = params;
+
+  const product = products.find((product) => product.d === parseInt(id));
+
+  if (!product) {
+    notFound();
+  }
+
   return (
     <div>
       <Navbar />
       <div className="flex flex-col md:flex-row items-center bg-white p-6 rounded-lg shadow-lg max-w-4xl mx-auto h-screen">
-        {/* Product Image */}
         <div className="md:w-1/2">
           <Image
-            src={product.image.src} // Dynamically use the product image
+            src={product.image.src}
             alt={product.name}
             width={500}
             height={500}
@@ -31,11 +35,9 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
           />
         </div>
 
-        {/* Product Details */}
         <div className="md:w-1/2 mt-6 md:mt-0 md:pl-8 text-center md:text-left">
           <h1 className="text-xl font-bold text-gray-900">{product.name}</h1>
           <p className="mt-4 text-gray-600 text-sm leading-6">
-            {/* Add description or custom text here */}
             Turn style on its head with this crafted take on the {product.name}.
             Its unique layering and exposed foam accents elevate this timeless design.
           </p>

@@ -34,8 +34,8 @@ export default function Navbar() {
             </div>
             <div className='flex gap-6 font-semibold pl-[120px]'>
                 <Link href='/products'>New & Featured</Link>
-                <div>Men</div>
-                <div>Women</div>
+                <Link href='/Men'>Men</Link>
+                <Link href='/Women'>Women</Link>
                 <div>Kids</div>
                 <div>Sale</div>
                 <div>SNKRS</div>

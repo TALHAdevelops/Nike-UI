@@ -8,7 +8,7 @@ import { client } from '@/sanity/lib/client';
 import { urlFor } from '@/sanity/lib/image';
 
 export default async function Page() {
-  const query = `*[_type == 'product']{
+  const query = `*[_type == 'product' && category == "Women's Shoes" ]{
   productName,
   "slug":slug.current,
   category,
@@ -18,9 +18,7 @@ export default async function Page() {
   price
 }`;
   const items = await client.fetch(query);
-  items.map((item: any) => {
-    console.log(item.slug)
-  })
+ 
   
   return (
     <div>

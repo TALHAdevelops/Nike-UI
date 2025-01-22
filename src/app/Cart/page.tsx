@@ -6,7 +6,7 @@ import { Trash2, Heart } from 'lucide-react';
 import { urlFor } from '@/sanity/lib/image';
 
 export default function CartPage() {
-  let quantity =  1
+ 
   const [items, setItems] = useState<any[]>([]); // Cart items
   const [cartTotal, setCartTotal] = useState(0); // Total cart amount
   const [deliveryCharge, setDeliveryCharge] = useState(0); // Delivery charge

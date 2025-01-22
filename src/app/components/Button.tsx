@@ -8,6 +8,7 @@ interface Product {
   price: number;
   description: string;
   image: any;
+  quantity: number;
 }
 
 const AddToCartButton = ({ product }: { product: Product }) => {
@@ -54,7 +55,7 @@ const AddToCartButton = ({ product }: { product: Product }) => {
         onClick={handleAddToCart}
         disabled={isLoading}
         className={`${
-          isLoading ? "bg-gray-500 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-600"
+          isLoading ? "bg-gray-500 cursor-not-allowed" : "bg-black hover:bg-black"
         } text-white px-4 py-2 rounded transition`}
       >
         {isLoading ? "Adding..." : "Add to Cart"}

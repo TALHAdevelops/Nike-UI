@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Navbar from '../components/Navbar';
+
 import Footer from '../components/Footer';
 // Import product data from a separate file for better reusability
 import { client } from '@/sanity/lib/client';
@@ -24,7 +24,7 @@ export default async function Page() {
   
   return (
     <div>
-      <Navbar />
+      
       <div className="min-h-screen bg-gray-50">
         <div className="max-w-7xl mx-auto p-6">
           {/* Header */}

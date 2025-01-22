@@ -1,78 +1,62 @@
-import React from 'react'
-import Image from 'next/image'
-import twitter from "../../../public/twit.svg";
-import facebook from "../../../public/fb.svg";
-import youtube from "../../../public/you.svg";
-import insta from "../../../public/insta.svg";
-import pin from "../../../public/pin.png";
+import Link from 'next/link';
+import React from 'react';
+import { FaTwitter, FaFacebookF, FaYoutube, FaInstagram } from 'react-icons/fa';
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <div className='w-full bg-black'>
-      {/* Main footer content */}
-      <div className='max-w-[1372px] mx-auto px-4 py-8'>
-        {/* Top section with links */}
-        <div className='flex flex-col md:flex-row justify-between gap-8 md:gap-4'>
-          {/* First column */}
-          <div className='flex flex-col md:flex-row gap-8 md:gap-16 lg:gap-44'>
-            <div className='text-white text-xs'>
-              <div className='pb-3 md:pb-5 hover:text-gray-300 cursor-pointer'>FIND A STORE</div>
-              <div className='pb-3 md:pb-5 hover:text-gray-300 cursor-pointer'>BECOME A MEMBER</div>
-              <div className='pb-3 md:pb-5 hover:text-gray-300 cursor-pointer'>SIGN UP FOR EMAIL</div>
-              <div className='pb-3 md:pb-5 hover:text-gray-300 cursor-pointer'>SEND US FEEDBACK</div>
-              <div className='pb-3 md:pb-5 hover:text-gray-300 cursor-pointer'>STUDENT DISCOUNTS</div>
-            </div>
-
-            {/* Get Help Section */}
-            <div className='text-xs'>
-              <div className='text-white pb-4'>GET HELP</div>
-              <div className='text-[#757575] pb-3 hover:text-gray-400 cursor-pointer'>Order Status</div>
-              <div className='text-[#757575] pb-3 hover:text-gray-400 cursor-pointer'>Delivery</div>
-              <div className='text-[#757575] pb-3 hover:text-gray-400 cursor-pointer'>Returns</div>
-              <div className='text-[#757575] pb-3 hover:text-gray-400 cursor-pointer'>Payment Options</div>
-              <div className='text-[#757575] pb-3 hover:text-gray-400 cursor-pointer'>Contact Us on Nike.com inquiries</div>
-              <div className='text-[#757575] pb-3 hover:text-gray-400 cursor-pointer'>Contact Us on All other inquiries</div>
-            </div>
-
-            {/* About Nike Section */}
-            <div className='text-xs'>
-              <div className='text-white pb-4'>ABOUT NIKE</div>
-              <div className='text-[#757575] pb-3 hover:text-gray-400 cursor-pointer'>News</div>
-              <div className='text-[#757575] pb-3 hover:text-gray-400 cursor-pointer'>Careers</div>
-              <div className='text-[#757575] pb-3 hover:text-gray-400 cursor-pointer'>Investors</div>
-              <div className='text-[#757575] pb-3 hover:text-gray-400 cursor-pointer'>Sustainability</div>
-            </div>
+    <footer className="bg-black text-gray-400 py-8">
+      <div className="w-10/12 mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-8 mb-8">
+          <div>
+            <ul className="space-y-2">
+              <li className="font-medium text-white">FIND A STORE</li>
+              <li><Link href="/fourcompo/member">BECOME A MEMBER</Link></li>
+              <li><Link href="/fourcompo/member">SIGN UP FOR EMAIL</Link> </li>
+              <li><Link href="/fourcompo/first"> US FEEDBACK</Link>SEND</li>
+              <li>STUDENT DISCOUNTS</li>
+            </ul>
           </div>
-
-          {/* Social Media Icons */}
-          <div className='flex gap-4 justify-center md:justify-start'>
-            <Image src={twitter} alt='twitter' className='w-6 h-6 cursor-pointer hover:opacity-80'/>
-            <Image src={facebook} alt='facebook' className='w-6 h-6 cursor-pointer hover:opacity-80'/>
-            <Image src={youtube} alt='youtube' className='w-6 h-6 cursor-pointer hover:opacity-80'/>
-            <Image src={insta} alt='insta' className='w-6 h-6 cursor-pointer hover:opacity-80'/>
+          <div>
+            <ul className="space-y-2">
+              <li className="font-medium text-white">GET HELP</li>
+              <li>Order Status</li>
+              <li>Delivery</li>
+              <li>Returns</li>
+              <li>Payment Options</li>
+              <li>Contact Us On Nike.com Inquiries</li>
+              <li>Contact Us On All Other Inquiries</li>
+            </ul>
+          </div>
+          <div>
+            <ul className="space-y-2">
+              <li className="font-medium text-white">ABOUT NIKE</li>
+              <li>News</li>
+              <li>Careers</li>
+              <li>Investors</li>
+              <li>Sustainability</li>
+            </ul>
+          </div>
+          <div className="flex space-x-4 text-xl">
+            <FaTwitter className="hover:text-white cursor-pointer" />
+            <FaFacebookF className="hover:text-white cursor-pointer" />
+            <FaYoutube className="hover:text-white cursor-pointer" />
+            <FaInstagram className="hover:text-white cursor-pointer" />
           </div>
         </div>
 
-        {/* Bottom section */}
-        <div className='mt-8 flex flex-col md:flex-row justify-between gap-4 text-xs'>
-          {/* Location and copyright */}
-          <div className='flex flex-wrap gap-2 items-center'>
-            <div className='flex items-center gap-2'>
-              <Image src={pin} alt='' className='h-[13.12px] w-[9.38px]'/>
-              <h2 className='text-white'>India</h2>
-            </div>
-            <div className='text-[#757575]'>©2023 Nike, Inc. All Rights Reserved</div>
+        <div className="flex flex-col sm:flex-row justify-between items-center border-t border-gray-700 pt-4">
+          <p className="text-sm text-gray-500">&copy; 2023 Nike, Inc. All Rights Reserved</p>
+          <div className="hidden sm:flex text-sm space-x-6">
+            <a href="#" className="hover:text-white">Guides</a>
+            <a href="#" className="hover:text-white">Terms of Sale</a>
+            <a href="#" className="hover:text-white">Terms of Use</a>
+            <a href="#" className="hover:text-white">Nike Privacy Policy</a>
           </div>
-
-          {/* Footer links */}
-          <div className='text-[#757575] flex flex-wrap gap-4 md:gap-10'>
-            <div className='hover:text-gray-400 cursor-pointer'>Guides</div>
-            <div className='hover:text-gray-400 cursor-pointer'>Terms of Sales</div>
-            <div className='hover:text-gray-400 cursor-pointer'>Terms of Use</div>
-            <div className='hover:text-gray-400 cursor-pointer'>Nike Privacy Policy</div>
-          </div>
+          <p className="text-sm mt-4 sm:mt-0">India</p>
         </div>
       </div>
-    </div>
-  )
-}
+    </footer>
+  );
+};
+
+export default Footer;

@@ -124,7 +124,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="w-[100%] items-center">
+    <div className="w-full items-center">
       {/* Top Section */}
       <div className="w-full h-[58px] bg-[#F5F5F5] items-center text-center py-2">
         <div className="font-semibold text-[15px] pb-1">Hello Nike App</div>
@@ -159,7 +159,7 @@ export default function Hero() {
       </div>
 
       {/* Slider Section */}
-      <div className="flex justify-between ml-10 mt-16">
+      <div className="flex justify-between ml-10 mt-16 w-screen">
         <div className="text-[23px] font-medium">Best of Air Max</div>
         <div>
           Shop

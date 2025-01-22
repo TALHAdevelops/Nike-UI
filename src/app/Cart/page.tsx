@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Trash2, Heart } from 'lucide-react';
 import { urlFor } from '@/sanity/lib/image';
+import Link from 'next/link';
 
 export default function CartPage() {
  
@@ -172,9 +173,11 @@ export default function CartPage() {
                   <span>₹ {(cartTotal + deliveryCharge).toLocaleString()}</span>
                 </div>
               </div>
+              <Link href="/Checkout">
               <button className="w-full bg-black text-white py-2 mt-4 rounded">
                 Member Checkout
               </button>
+              </Link>
             </div>
           </div>
         </div>

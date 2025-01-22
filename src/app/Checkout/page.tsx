@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Checkout = () => {
@@ -6,7 +7,7 @@ const Checkout = () => {
       {/* Header */}
       <header className="p-4 border-b">
         <div className="flex justify-between items-center">
-          <img src="/logo.png" alt="Nike Logo" className="h-6" />
+         Member Checkout Page
           <p className="text-sm">000 800 100 9538</p>
         </div>
       </header>
@@ -29,10 +30,8 @@ const Checkout = () => {
               information. <a href="#" className="text-blue-500">Learn More</a>
             </p>
 
-            <button className="mt-4 p-4 border rounded-md flex items-center space-x-2">
-              <span className="w-5 h-5 border border-black rounded-full" />
-              <span>Deliver It</span>
-            </button>
+            <input type="radio" className="" value="Deliver it" name="confirm" id="confirm" />
+            
           </div>
 
           {/* Address Form */}
@@ -94,7 +93,7 @@ const Checkout = () => {
               </label>
             </div>
 
-            <h3 className="text-lg font-semibold">What's your contact information?</h3>
+            <h3 className="text-lg font-semibold">What&apos;s your contact information?</h3>
             <div className="grid gap-4">
               <input
                 type="email"
@@ -108,7 +107,7 @@ const Checkout = () => {
               />
             </div>
 
-            <h3 className="text-lg font-semibold">What's your PAN?</h3>
+            <h3 className="text-lg font-semibold">What&apos;s your PAN?</h3>
             <input
               type="text"
               placeholder="PAN"
@@ -157,26 +156,26 @@ const Checkout = () => {
           </div>
 
           <div className="flex items-center space-x-4">
-            <img
+            <Image
               src="/product.jpg"
               alt="Nike Product"
               className="w-20 h-20 object-cover border rounded-md"
             />
             <div>
-              <p>Nike Dri-FIT ADV TechKnit Ultra Men's Short-Sleeve Running Top</p>
+              <p>Nike Dri-FIT ADV TechKnit Ultra Men&apos;s Short-Sleeve Running Top</p>
               <p>Qty: 1</p>
               <p>Size: L</p>
             </div>
           </div>
 
           <div className="flex items-center space-x-4">
-            <img
+            <Image
               src="/product-shoes.jpg"
               alt="Nike Shoes"
               className="w-20 h-20 object-cover border rounded-md"
             />
             <div>
-              <p>Nike Air Max 97 SE Men's Shoes</p>
+              <p>Nike Air Max 97 SE Men&apos;s Shoes</p>
               <p>Qty: 1</p>
               <p>Size: UK 8</p>
             </div>

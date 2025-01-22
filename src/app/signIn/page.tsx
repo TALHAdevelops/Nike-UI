@@ -1,14 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+
 import Image from 'next/image';
 import nike from '../../../public/nikelogo.png';
 
 export default function Page() {
   return (
     <div>
-      <Navbar />
+   
       <div className=" h-screen bg-gray-100 flex flex-col items-center justify-center">
       <div className="bg-white p-8 shadow-md rounded-lg max-w-md w-full flex flex-col items-center justify-center" >
       {/* Nike Logo */}
@@ -82,7 +81,7 @@ export default function Page() {
       </p>
     </div>
     </div>
-      <Footer />
+    
     </div>
   );
 }

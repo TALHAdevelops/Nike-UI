@@ -1,8 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+
 import msg1 from "../../../public/msg1.png"
 import msg2 from "../../../public/msg.png"
 import pin from "../../../public/location.png"
@@ -12,7 +11,7 @@ import good from "../../../public/good.png"
 export default function page() {
   return (
     <div>
-        <Navbar/>
+       
         <div className="min-h-screen p-4 bg-gray-50">
       {/* Header */}
       <div className="text-center mb-6">
@@ -138,7 +137,7 @@ export default function page() {
       </div>
     </div>
 
-        <Footer/>
+     
     </div>
   )
 }

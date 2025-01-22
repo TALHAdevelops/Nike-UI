@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Footer from '../components/Footer';
+
 // Import product data from a separate file for better reusability
 import { client } from '@/sanity/lib/client';
 import { urlFor } from '@/sanity/lib/image';
@@ -134,7 +134,7 @@ export default async function Page() {
           </div>
         </div>
       </div>
-      <Footer />
+     
     </div>
   );
 }

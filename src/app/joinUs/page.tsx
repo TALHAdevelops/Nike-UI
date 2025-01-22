@@ -1,6 +1,5 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import nike from "../../../public/nikelogo.png"
@@ -8,7 +7,7 @@ import nike from "../../../public/nikelogo.png"
 export default function page() {
   return (
     <div>
-        <Navbar/>
+        
         <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <div className="bg-white p-8 shadow-md rounded-lg max-w-md w-full">
         <div className="text-center">
@@ -108,7 +107,7 @@ export default function page() {
         </p>
       </div>
     </div>
-        <Footer/>
+        
     </div>
   )
 }

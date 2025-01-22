@@ -1,5 +1,4 @@
 
-import Footer from '@/app/components/Footer';
 import { client } from '@/sanity/lib/client';
 import ProductDetails from '../../components/Productdetail'; // Client-side component
 
@@ -44,7 +43,7 @@ export default async function Page({ params }: Props) {
     <div className="bg-gray-50 min-h-screen">
       
       <ProductDetails product={products[0]} />
-      <Footer />
+      
     </div>
   );
 }
